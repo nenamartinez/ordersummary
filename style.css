@@ -1,0 +1,175 @@
+/*
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+  padding: 10rem;
+}
+
+.card {
+  margin: 0 auto;
+  width: 40rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 1rem 4rem hsla(245, 75%, 52%, 0.3);
+}
+
+.card-top {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.card-bottom {
+  padding: 2.4rem 5rem;
+}
+
+.heading-secondary {
+  color: hsl(223, 47%, 23%);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.plan-box {
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 2.4rem;
+}
+
+.icon {
+  margin-right: 1.4rem;
+}
+
+.annual-plan-text {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.price {
+  display: block;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+}
+
+.change {
+  margin-left: auto;
+  font-size: 1.4rem;
+}
+
+.change a:link,
+.change a:visited {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.change a:hover,
+.change a:active {
+  color: hsla(245, 75%, 52%, 0.7);
+  text-decoration: none;
+}
+
+.order-btn {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 1rem 4rem hsla(245, 75%, 52%, 0.3);
+}
+
+.order-btn:hover,
+.order-btn:active {
+  background-color: hsla(245, 75%, 52%, 0.7);
+  cursor: pointer;
+}
+
+.cancel-btn {
+  padding: 1.2rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cancel-btn a:link,
+.cancel-btn a:visited {
+  text-decoration: none;
+
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel-btn a:hover,
+.cancel-btn a:active {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10rem 2rem 0;
+  }
+}
