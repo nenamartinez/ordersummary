@@ -51,13 +51,17 @@ body {
   background-position: top;
   font-family: "Red Hat Display", sans-serif;
   font-weight: 500;
+  font-size: 1.6rem;
   line-height: 1.7;
-  padding: 10rem;
 }
 
 .card {
-  margin: 0 auto;
-  width: 40rem;
+  margin: 15rem auto;
+  width: 90%;
+  min-width: 30rem;
+  max-width: 45rem;
+  /* max-width: 45rem; */
+  /* min-width: 30rem; */
   background-color: #fff;
   border-radius: 1.2rem;
   box-shadow: 0 1rem 4rem hsla(245, 75%, 52%, 0.3);
@@ -67,10 +71,12 @@ body {
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .card-bottom {
-  padding: 2.4rem 5rem;
+  padding: 2.4rem;
 }
 
 .heading-secondary {
@@ -96,6 +102,7 @@ body {
   justify-content: space-between;
   border-radius: 8px;
   margin-bottom: 2.4rem;
+  font-size: 1.4rem;
 }
 
 .icon {
@@ -105,7 +112,6 @@ body {
 .annual-plan-text {
   color: hsl(223, 47%, 23%);
   font-weight: 700;
-  font-size: 1.6rem;
 }
 
 .price {
@@ -168,8 +174,8 @@ body {
   color: hsl(223, 47%, 23%);
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    padding: 10rem 2rem 0;
+@media screen and (min-width: 475px) {
+  .card-bottom {
+    padding: 5rem;
   }
 }
